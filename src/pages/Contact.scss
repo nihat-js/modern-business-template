@@ -133,3 +133,26 @@
     }
   }
 }
+
+@media screen and (max-width:768px) {
+  .contact-page {
+    section.get-in-tocuh {
+      form {
+        .textarea textarea {
+          
+          width: 100% !important;
+        }
+      }
+    }
+
+    section.boxes {
+      padding: 4rem 1rem;
+
+      .container {
+        .row {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    }
+  }
+}

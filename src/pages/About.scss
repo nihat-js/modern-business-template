@@ -50,7 +50,7 @@
         .left-column {
           img {
             width: 100%;
-            border-radius: 50%;
+            border-radius: 10%;
           }
         }
 
@@ -154,4 +154,43 @@
       }
     }
   }
+}
+
+@media screen and (max-width:768px) {
+  .about-page {
+    section.hero {
+      .container {
+        padding: 4rem 1rem;
+      }
+    }
+
+    section.founding {
+      padding: 3rem 1rem !important;
+
+      .container {
+        .row {
+          grid-template-columns: 1fr !important;
+        }
+      }
+    }
+
+    section.growth {
+      padding : 3rem 1rem;
+      .container{
+        .row{
+          grid-template-columns: 1fr ;
+        }
+      }
+    }
+
+    section.team {
+      .container{
+        .row{
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+
 }

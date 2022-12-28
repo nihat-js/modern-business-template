@@ -61,9 +61,9 @@ export default function Home() {
             <p className="text">"Working with Start Bootstrap templates has saved me tons of development time when building new projects! Starting with a Bootstrap template just makes things easier!"</p>
             <div className="author">
               <img src={profilPictureImage} alt="" />
-              <h4 className="fullname">Tom Ato </h4>
+              <h4 className="fullname"> Nihat Abdullazade </h4>
               <span className="slash">  / </span>
-              <h4 className="position"> CEO, Pomodoro</h4>
+              <h4 className="position"> JS,Front End </h4>
             </div>
           </div>
         </div>

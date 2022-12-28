@@ -1,0 +1,101 @@
+.pricing-page {
+
+  section.start {
+    padding: 6rem 0;
+    background-color: #f7f8f9;
+
+    .container {
+      .heading {
+        font-size: 2.5rem;
+        margin-bottom: .5rem;
+        text-align: center;
+      }
+
+      .subheading {
+        font-size: 1.5rem;
+        color: #666;
+        margin-bottom: 2.5rem;
+        text-align: center;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+        .box {
+          background-color: #fff;
+          padding: 2rem 3rem;
+          border: 2px solid #12151911;
+          border-radius: 6px;
+
+          .type {
+            color: #666;
+            margin-bottom: .5rem;
+          }
+
+          .price {
+            display: flex;
+            align-items: flex-end;
+            gap: .4rem;
+
+            .amount {
+              font-size: 3.5rem;
+            }
+
+            .duration {}
+
+          }
+
+          .list {
+            margin-top: 1.5rem;
+
+            &>p {
+              margin-bottom: .75rem;
+            }
+
+            .text-blue {
+              color: #0d6efd;
+            }
+
+            .text-gray {
+              color: #666;
+            }
+
+            .text-bold {
+              font-weight: bold;
+            }
+          }
+
+          .action {
+            margin-top: 1.5rem;
+
+            button {
+              width: 100%;
+              color: #0d6efd;
+              border: 1px solid #0d6efd;
+              padding: .8rem 1.2rem;
+              background: none;
+              border-radius: 4px;
+
+              &:hover {
+                background-color: #0d6efd;
+                color: #fff;
+              }
+            }
+          }
+
+          &:nth-child(2) .action button {
+            background-color: #0d6efd;
+            color: #fff;
+
+            &:hover {
+              background-color: #fff;
+              color: #0d6efd;
+            }
+          }
+        }
+      }
+    }
+  }
+}
