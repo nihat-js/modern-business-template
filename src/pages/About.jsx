@@ -76,9 +76,9 @@ export default function About() {
 function TeamBox(props) {
   return (
     <div className="box" >
-      <figure>
+      <picture>
         <img src={props.img} alt="" />
-      </figure>
+      </picture>
       <h4 className="fullname"> {props.fullname} </h4>
       <p className="position"> {props.position} </p>
     </div >

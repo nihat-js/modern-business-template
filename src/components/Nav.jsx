@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import "./Nav.scss"
 
 export default function Nav() {
 
-  const [toggleBlog, setToggleBlog] = useState(true)
+  const [toggleBlog, setToggleBlog] = useState(false)
   const [togglePortfolio, setTogglePortfolio] = useState(false)
 
 
@@ -13,11 +14,11 @@ export default function Nav() {
         <h2 className="brand">Modern Business </h2>
         <div className="link">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">FAQ</a></li>
+            <Link to='/' >  <li><a >  Home</a></li>    </Link>
+            <Link to='/about' > <li> <a > About  </a>  </li> </Link>
+            <Link to='/contact' > <li> <a > Contact  </a>  </li> </Link>
+            <Link to='/about' > <li> <a > Pricing  </a>  </li> </Link>
+            <Link to='/about' > <li> <a > FAQ  </a>  </li> </Link>
             <li className='dropdown' >
               <span className='toggle' onClick={() => { setToggleBlog(!toggleBlog); setTogglePortfolio(false) }} >Blog</span>
               <ul className={`content ${!toggleBlog ? 'd-none' : ''} `}  >
