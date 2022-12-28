@@ -20,7 +20,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="left-column">
-              <h2 className="heading">Modern Business template for free everyone </h2>
+              <h2 className="heading"> Take risks and continue (Nihat JS) </h2>
               <p className="subheading">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit!</p>
               <div className="action">
                 <button className="btn-get-started">Get Started</button>
