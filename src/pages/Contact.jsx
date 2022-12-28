@@ -42,7 +42,7 @@ export default function Contact() {
                 <span className="error"></span>
               </div>
               <div className="textarea">
-                <textarea name="" id="" cols="30" rows="8"></textarea>
+                <textarea name="" id="" ></textarea>
               </div>
               <div className="action">
                 <button> Submit  </button>

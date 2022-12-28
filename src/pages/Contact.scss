@@ -6,7 +6,7 @@
       background-color: #f9f8f8;
 
       .row {
-        width: 600px;
+        max-width: 600px;
         margin: 0 auto;
 
         picture {
@@ -136,13 +136,18 @@
 
 @media screen and (max-width:768px) {
   .contact-page {
-    section.get-in-tocuh {
-      form {
-        .textarea textarea {
-          
-          width: 100% !important;
-        }
+    section.get-in-touch {
+      .container{
+        padding: 3rem 1rem;
+        
+          form {
+            .textarea textarea {
+        
+              width: 100% !important;
+            }
+          }
       }
+      
     }
 
     section.boxes {
