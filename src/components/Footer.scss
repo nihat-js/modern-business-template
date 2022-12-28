@@ -1,0 +1,19 @@
+footer{
+  padding: 1.5rem 0 ;
+  background-color: #212529;
+  color : #fff;
+  .container{
+    .row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .link{
+        display: flex;
+        gap: 1rem;
+        li a{
+        color: #fff;
+        }
+      }
+    }
+  }
+}

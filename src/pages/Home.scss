@@ -228,4 +228,55 @@ main.home-page {
       }
     }
   }
+
+  section.newsletter{
+    padding: 4rem 0 ;
+    color : #fff;
+    .container{
+        .row {
+          background-color: #0d6efd;
+          padding: 3rem 2rem ;
+          display: flex;
+          justify-content: space-between;
+          .left-column{
+            .heading{
+                font-size: 1.75rem;
+                margin-bottom: .5rem;
+            }
+            .subheading{
+              color: #ffffff80;
+
+            }
+          }
+          .right-column{
+            form{
+              margin-bottom: .5rem;
+              display: grid;
+              grid-template-columns: 3fr 1fr;
+              input{
+                  padding: .6rem .9rem;
+                  border: 1px solid #ffffff80;
+                  outline: none;
+                  font-size: 1.1rem;
+              }
+              button {
+                color : #fff;
+                border-radius: 0 5px 5px 0 ;
+                background-color: #0d6efd;
+                border: 2px solid #fff ;
+                font-size: 1.1rem;
+                &:hover{
+                  color : #0d6efd;
+                  background-color: #fff;
+                  border-color: #008080;
+                }
+              }
+            }
+            .text{
+              color : #ffffff80;
+            }
+          }
+        }
+    }
+  }
 }

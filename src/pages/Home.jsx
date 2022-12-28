@@ -88,15 +88,11 @@ export default function Home() {
       </section>
 
       <section className="newsletter">
-        <div className="container"></div>
-      </section>
-
-      <div className="newsletter-wrap">
-        <div className="container-1300">
+        <div className="container">
           <div className="row">
             <div className="left-column">
               <h3 className="heading">New products, delivered to you.</h3>
-              <p className="text">Sign up for our newsletter for the latest updates.</p>
+              <p className="subheading">Sign up for our newsletter for the latest updates.</p>
             </div>
             <div className="right-column">
               <form action="">
@@ -107,7 +103,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
 
       <Footer />
 
