@@ -6,7 +6,7 @@ export default function Footer() {
     <footer>
       <div className="container">
         <div className="row">
-          <p className="copyright"> Copyright © Your Website 2022</p>
+          <p className="copyright"> Nihat JS © Your Website 2022</p>
           <ul className='link'>
 
             <li>  <a href=""> Privacy </a>      </li>
