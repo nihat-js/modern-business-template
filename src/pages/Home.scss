@@ -1,5 +1,5 @@
 main.home-page {
-  .hero {
+  section.hero {
     background-color: #212529;
     color: #fff;
     padding: 4rem 0;
@@ -65,4 +65,42 @@ main.home-page {
       }
     }
   }
+
+  section.building{
+    padding : 4rem 0 ;
+    .container{
+      .row{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap : 2rem;
+        .left-column{
+          .heading{
+            font-size: 2rem;
+          }
+        }
+        .right-column{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap : 2rem;
+          .box{
+            figure{
+              margin-bottom: .5rem; 
+              img {
+              width: 32px;
+            }
+            }
+            .title{
+              font-size: 1.25rem;
+              margin-bottom: .25rem;
+            }
+            .text{
+              font-size: 1rem;
+              color : #212529;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }

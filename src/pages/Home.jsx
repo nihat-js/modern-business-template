@@ -4,7 +4,7 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
 import heroImage from '../assets/img/home-hero.jpg'
-
+import bagImage from '../assets/img/bag.svg'
 export default function Home() {
   return (
     <main className='home-page'>
@@ -38,36 +38,14 @@ export default function Home() {
               <h3 className="heading">A better way to start building.</h3>
             </div>
             <div className="right-column">
-              <div className="el">
-                <figure>
-                  <img src="" alt="" />
-                </figure>
-                <h4 className="heading">Featured title </h4>
-                <p className="text"> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text </p>
-              </div>
-              <div className="el">
-                <figure>
-                  <img src="" alt="" />
-                </figure>
-                <h4 className="heading">Featured title </h4>
-                <p className="text"> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text </p>
-              </div>
-              <div className="el">
-                <figure>
-                  <img src="" alt="" />
-                </figure>
-                <h4 className="heading">Featured title </h4>
-                <p className="text"> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text </p>
-              </div>
-              <div className="el">
-                <figure>
-                  <img src="" alt="" />
-                </figure>
-                <h4 className="heading">Featured title </h4>
-                <p className="text"> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text </p>
-              </div>
+              <BuildingBox img={bagImage} title="My own title" text="Paragraph of text beneath the heading to explain the heading. Here is just a bit more text." />
+              <BuildingBox img={bagImage} title="Books" text="Paragraph of text beneath the heading to explain the heading. Here is just a bit more text." />
+              <BuildingBox img={bagImage} title="Black" text="Paragraph of text beneath the heading to explain the heading. Here is just a bit more text." />
+              <BuildingBox img={bagImage} title="Cool" text="Paragraph of text beneath the heading to explain the heading. Here is just a bit more text." />
             </div>
           </div>
+
+
         </div>
       </section>
 
@@ -153,3 +131,16 @@ function Box() {
   )
 }
 
+
+
+function BuildingBox(props) {
+  return (
+    <div className="box">
+      <figure>
+        <img src={props.img} alt="" />
+      </figure>
+      <h4 className="title"> {props.title}  </h4>
+      <p className="text">  {props.text}  </p>
+    </div>
+  )
+}
