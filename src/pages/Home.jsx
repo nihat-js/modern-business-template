@@ -5,6 +5,11 @@ import Footer from '../components/Footer'
 
 import heroImage from '../assets/img/home-hero.jpg'
 import bagImage from '../assets/img/bag.svg'
+import profilPictureImage from '../assets/img/profile-picture.jpg'
+import blogImage1 from '../assets/img/blog-1.jpg'
+import blogImage2 from '../assets/img/blog-2.jpg'
+import blogImage3 from '../assets/img/blog-3.jpg'
+
 export default function Home() {
   return (
     <main className='home-page'>
@@ -49,34 +54,42 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="quote-wrap">
-        <div className="container-1300">
-          <div className="box">
+
+      <section className="quote">
+        <div className="container">
+          <div className="row">
             <p className="text">"Working with Start Bootstrap templates has saved me tons of development time when building new projects! Starting with a Bootstrap template just makes things easier!"</p>
             <div className="author">
-              <span className='pp'></span>
-              <span className="fullname">Tom Ato </span>
+              <img src={profilPictureImage} alt="" />
+              <h4 className="fullname">Tom Ato </h4>
               <span className="slash">  / </span>
-              <span className="position"> CEO, Pomodoro</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div className="blog-wrap">
-        <div className="container-1300">
-          <div className="blog">
-            <h3 className="heading">From our blog</h3>
-            <p className="suheading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit ratione dicta mollitia. Officiis ad.</p>
-            <div className="row">
-              <Box />
-              <Box />
-              <Box />
+              <h4 className="position"> CEO, Pomodoro</h4>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className="blog">
+        <div className="container">
+          <h3 className="heading">From our blog</h3>
+          <p className="subheading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit ratione dicta mollitia. Officiis ad.</p>
+          <div className="row">
+            <BlogBox img={blogImage1} tags={['news']} title="Amazing " text=" Some quick example text to build on the card title and make up the bulk of the card's content. " authorImage={profilPictureImage}
+              authorFullName="Nihat Abdullazade" date="March 12 2022" readTime="6 min" />
+
+            <BlogBox img={blogImage2} tags={['news']} title="Amazing " text="Some quick example text to build on the card title and make up the bulk of the card's content." authorImage={profilPictureImage}
+              authorFullName="Nihat Test" date="March 12 2022" readTime="2 min" />
+
+            <BlogBox img={blogImage3} tags={['news']} title="Amazing " text="Some quick example text to build on the card title and make up the bulk of the card's content." authorImage={profilPictureImage}
+              authorFullName="Nihat JS" date="March 12 2022" readTime="4 min" />
+
+          </div>
+        </div>
+      </section>
+
+      <section className="newsletter">
+        <div className="container"></div>
+      </section>
 
       <div className="newsletter-wrap">
         <div className="container-1300">
@@ -102,29 +115,33 @@ export default function Home() {
   )
 }
 
-function Box() {
+function BlogBox(props) {
   return (
     <div className="box">
+
       <figure >
-        <img src="" alt="" />
+        <img src={props.img} alt="" />
         <span></span>
       </figure>
+
       <div className="content">
+
         <div className="tags">
-          <span className="tag"> News </span>
+          {props.tags.map(x => <span className="tag"> {x} </span>)}
         </div>
-        <h3 className="heading"> Blog post title </h3>
-        <p className="text">Some quick example text to build on the   card title and make up the bulk of the card's content</p>
+        <h3 className="title">  {props.title} </h3>
+        <p className="text"> {props.text} </p>
         <div className="author">
           <figure>
-            <img src="" alt="" />
+            <img src={props.authorImage} alt="" />
           </figure>
           <div className="content">
-            <h4 className="heading"> Kelly Rowan </h4>
-            <span className="date"> March 12, 2022 </span>
-            <span className="read-time"> 6 min read</span>
+            <h4 className="fullname"> {props.authorFullName} </h4>
+            <span className="date"> {props.date} </span>
+            <span className="read-time"> {props.readTime} read</span>
           </div>
         </div>
+
       </div>
 
     </div>
