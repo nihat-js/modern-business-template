@@ -31,49 +31,46 @@ export default function Home() {
         </div>
       </section>
 
-    <section className="building"></section>
-
-      <div className="building-wrap">
-        <div className="container-1300">
-          <div className="building">
-            <div className="row">
-              <div className="left-column">
-                <h3 className="heading">A better way to start building.</h3>
+      <section className="building">
+        <div className="container">
+          <div className="row">
+            <div className="left-column">
+              <h3 className="heading">A better way to start building.</h3>
+            </div>
+            <div className="right-column">
+              <div className="el">
+                <figure>
+                  <img src="" alt="" />
+                </figure>
+                <h4 className="heading">Featured title </h4>
+                <p className="text"> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text </p>
               </div>
-              <div className="right-column">
-                <div className="el">
-                  <figure>
-                    <img src="" alt="" />
-                  </figure>
-                  <h4 className="heading">Featured title </h4>
-                  <p className="text"> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text </p>
-                </div>
-                <div className="el">
-                  <figure>
-                    <img src="" alt="" />
-                  </figure>
-                  <h4 className="heading">Featured title </h4>
-                  <p className="text"> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text </p>
-                </div>
-                <div className="el">
-                  <figure>
-                    <img src="" alt="" />
-                  </figure>
-                  <h4 className="heading">Featured title </h4>
-                  <p className="text"> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text </p>
-                </div>
-                <div className="el">
-                  <figure>
-                    <img src="" alt="" />
-                  </figure>
-                  <h4 className="heading">Featured title </h4>
-                  <p className="text"> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text </p>
-                </div>
+              <div className="el">
+                <figure>
+                  <img src="" alt="" />
+                </figure>
+                <h4 className="heading">Featured title </h4>
+                <p className="text"> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text </p>
+              </div>
+              <div className="el">
+                <figure>
+                  <img src="" alt="" />
+                </figure>
+                <h4 className="heading">Featured title </h4>
+                <p className="text"> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text </p>
+              </div>
+              <div className="el">
+                <figure>
+                  <img src="" alt="" />
+                </figure>
+                <h4 className="heading">Featured title </h4>
+                <p className="text"> Paragraph of text beneath the heading to explain the heading. Here is just a bit more text </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
       <div className="quote-wrap">
         <div className="container-1300">
           <div className="box">
