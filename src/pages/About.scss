@@ -106,18 +106,21 @@
   section.team {
     padding: 6rem 0;
     background-color: #fefdfc;
+
     .container {
       .heading {
         text-align: center;
         font-size: 3rem;
         margin-bottom: .75rem;
       }
-      .subheading{
-        color : #6c7574;
+
+      .subheading {
+        color: #6c7574;
         font-size: 1.25rem;
         text-align: center;
         margin-bottom: 1.5rem;
       }
+
       .row {
         display: grid;
         grid-template-columns: repeat(4, 200px);
@@ -127,20 +130,24 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          figure {
+
+          picture {
             margin-bottom: 1rem;
+
             img {
               width: 150px;
               height: 150px;
               border-radius: 50%;
             }
           }
-          .fullname{
+
+          .fullname {
             font-size: 1.25rem;
             margin-bottom: .25rem;
           }
-          .position{
-            color : #6c7574;
+
+          .position {
+            color: #6c7574;
             // text-align: center;
           }
         }

@@ -1,26 +1,133 @@
-.contact-page{
-  section.get-in-touch{
-    padding: 3rem 0 ;
-    .container{
+.contact-page {
+  section.get-in-touch {
+    padding: 3rem 0;
+
+    .container {
       background-color: #f9f8f8;
+
       .row {
-        display: flex;
-        flex-direction: column;
-        align-items : center;
-        picture{
-          margin-bottom: 1.25rem;
+        width: 600px;
+        margin: 0 auto;
+
+        picture {
+          padding: 1rem 0;
+          margin: 1.25rem 0;
+          display: flex;
+          justify-content: center;
+
           img {
             width: 36px;
           }
         }
-        .heading{
+
+        .heading {
           font-size: 2.5rem;
           margin-bottom: .5rem;
+          text-align: center;
         }
-        .subheading{
-          color : #6c7b7d;
+
+        .subheading {
+          color: #6c7b7d;
           font-size: 1.25rem;
           margin-bottom: 2.5rem;
+          text-align: center;
+        }
+
+        form {
+          .input-group {
+            margin-bottom: 1.25rem;
+
+            &>div {
+              position: relative;
+
+              input {
+                width: 100%;
+                border: 1px solid #ededed;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                font-size: 1.2rem;
+                padding: 1rem 1.5rem;
+
+                &:focus {
+                  box-shadow: 0 5px 5px #0d6efd;
+                }
+
+                &:focus+.placeholder {
+                  font-size: .6rem;
+                  color: #6c7b7d;
+                  top: .2rem;
+                }
+              }
+
+              .placeholder {
+                position: absolute;
+                top: .75rem;
+                left: 1.5rem;
+                font-size: 1.1rem;
+                transition: .25s all;
+                // z-index: ;
+              }
+            }
+          }
+
+          .textarea {
+            margin-bottom: 1rem;
+
+            textarea {
+              width: 100%;
+              font-size: 1.1rem;
+              border: 1px solid #ededed;
+              outline: none;
+              resize: none;
+              padding: 1rem 1.5rem;
+            }
+          }
+
+          .action {
+            button {
+              width: 100%;
+              padding: 1rem 1.5rem;
+              color: #fff;
+              background-color: #0d6efd;
+              border: none;
+              border-radius: 5px;
+              font-size: 1.05rem;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  section.boxes {
+    padding: 4rem 0;
+
+    .container {
+      .row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+        .box {
+          figure {
+            margin-bottom: 1rem;
+
+            img {
+              width: 36px;
+            }
+          }
+
+          .title {
+            font-size: 1.5rem;
+            margin-bottom: .4rem;
+          }
+
+          .text {
+            font-size: 1rem;
+            color: #6c7b7d;
+          }
         }
       }
     }

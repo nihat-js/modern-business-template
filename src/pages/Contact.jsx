@@ -20,61 +20,68 @@ export default function Contact() {
             <h2 className="heading">Get in touch</h2>
             <p className="subheading"> We'd love to hear from you          </p>
             <form action="">
-              <div className="input-field">
-                <div className="input-group">
+              <div className="input-group">
+                <div >
                   <input type="text" />
                   <span className="placeholder"> Full Name </span>
                 </div>
                 <span className="error"></span>
               </div>
-              <div className="input-field">
-                <div className="input-group">
+              <div className="input-group">
+                <div >
                   <input type="text" />
                   <span className="placeholder"> Email address </span>
                 </div>
                 <span className="error"></span>
               </div>
-              <div className="input-field">
-                <div className="input-group">
+              <div className='input-group' >
+                <div>
                   <input type="text" />
                   <span className="placeholder"> Phone Number </span>
                 </div>
                 <span className="error"></span>
               </div>
-              <div className="textarea-field">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+              <div className="textarea">
+                <textarea name="" id="" cols="30" rows="8"></textarea>
               </div>
-              <div className="button-field">
+              <div className="action">
                 <button> Submit  </button>
               </div>
 
 
             </form>
-            <div className="row">
-              <Box img='' heading="Chat with us" text="Chat live with one of our support specialists." />
-              <Box img='' heading='Ask the community' text='Explore our community forums and communicate with other users.' />
-              <Box img='' heading='Support center' text='Browse FAQ s and support articles to find solutions.' />
-              <Box img='' heading='Call us' text='Call us during normal business hours at (555) 892-9403.' />
-            </div>
+
           </div>
+        </div >
+      </section >
+
+      <section className="boxes">
+        <div className="container">
+          <div className="row">
+            <Box img={imageChat} title="Chat with us" text="Chat live with one of our support specialists." />
+            <Box img={imageChat} title='Ask the community' text='Explore our community forums and communicate with other users.' />
+            <Box img={imageChat} title='Support center' text='Browse FAQ s and support articles to find solutions.' />
+            <Box img={imageChat} title='Call us' text='Call us during normal business hours at (555) 892-9403.' />
+          </div>
+
         </div>
       </section>
 
       <Footer />
 
-    </div>
+    </div >
   )
 }
 
 
-function Box() {
+function Box(props) {
   return (
     <div className='box'>
       <figure>
-        <img src="" alt="" />
+        <img src={props.img} alt="" />
       </figure>
-      <h4 className="heading">Chat with us </h4>
-      <p className="text">Chat live with one of our support specialists.</p>
+      <h4 className="title"> {props.title} </h4>
+      <p className="text"> {props.text}  </p>
     </div>
   )
 }
