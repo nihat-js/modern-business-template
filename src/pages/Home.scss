@@ -1,13 +1,68 @@
 main.home-page {
-  .nav-wrap {
-    background-color: #212529;
-  }
-
-  .hero-wrap {
-    background-color: #212529;
-  }
-
   .hero {
+    background-color: #212529;
+    color: #fff;
     padding: 4rem 0;
+
+    .container {
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+
+        .left-column {
+          .heading {
+            font-size: 3rem;
+            line-height: 4rem;
+            margin-bottom: .5rem;
+          }
+
+          .subheading {
+            font-size: 1.25rem;
+            line-height: 120%;
+            color: #ffffff80;
+            margin-bottom: 1rem;
+          }
+
+          .action {
+            .btn-get-started{
+              color : #fff;
+              background-color: #0d6efd;
+              margin-right: 1.25rem;
+              border-radius: 6px;
+              padding: .75rem 1.25rem;
+              border:none;
+              font-size: 1.1rem;
+              &:hover{
+                background-color: #0d6efdcc;
+              }
+            }
+
+          }
+          .btn-learn-more{
+            color : #fff;
+            border: 1px solid #fff;
+            border-radius: 6px;
+            background: transparent;
+            padding: .75rem 1.25rem;
+            font-size: 1.1rem;
+            &:hover{
+              background-color: #fff;
+              color : #212529;
+            }
+          }
+        }
+
+        .right-column {
+          figure {
+            img {
+              width: 100%;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
   }
 }
